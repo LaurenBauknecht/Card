@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class Deck
 	{
 		static ArrayList <Card> deck = new ArrayList <Card> ();
@@ -110,5 +111,6 @@ public class Deck
 			deck.add(new Card("King", "diamonds",13));
 
 			deck.add(new Card("King", "clubs",13));
+			Collections.shuffle(deck);
 		}
 }
